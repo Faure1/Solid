@@ -1,7 +1,16 @@
-import '../styles/globals.css'
-
+import '../styles/globals.scss'
+import { NextUIProvider } from '@nextui-org/react';
+import { darkTheme } from "../theme/darkTheme";
+import { whiteTheme } from "../theme/whitetheme"
+import { useRouter } from 'next/router'
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  const router = useRouter()
+
+  return(
+    <NextUIProvider theme={darkTheme}>
+      <Component {...pageProps} />
+    </NextUIProvider>
+  )
 }
 
 export default MyApp
