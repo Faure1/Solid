@@ -1,4 +1,3 @@
-
 import React from "react";
 import {
   Container,
@@ -23,22 +22,22 @@ import {
 const Bootstrap1 = ({ direccion, titulo, contedido }) => {
   return (
     <Grid.Container>
-      <Grid xs={12} md={6} >
+      <Grid xs={12} md={5} >
           <Image
-            width={350}
-            height={350}
+            width={400}
+            height={400}
             layout='intrinsic'
             src={direccion}
             alt={titulo}
           />
         </Grid>
         <Grid xs={12} md={6}>
-          <Grid.Container alignItems="center"justify="center">
+          <Grid.Container justify="center">
             <Grid>
-               <Text h4 >{titulo}</Text> 
+              <Text h4 css={{pt:"4rem"}}>{titulo}</Text> 
             </Grid>
-            <Grid >
-              <Text>{contedido}</Text>
+            <Grid css={{p:"10%", pt:"1rem"}} >
+              <Text >{contedido}</Text>
             </Grid>
           </Grid.Container>
         </Grid>

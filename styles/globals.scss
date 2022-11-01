@@ -1,39 +1,115 @@
-.hero1 {
-	height: 20vh;
-	background: linear-gradient(
-		180deg,
-		rgba(0, 0, 0, 0.5) 0%,
-		rgba(0, 0, 0, 0.8) 100%
-	  ),
-	  url(../public/img/laperla.jpg) center center / cover no-repeat;
+/** @format */
 
+.hero1 {
+  height: 40vh;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url(../public/img/hero1.png) center center / cover no-repeat;
 }
 .hero2 {
-	height: 20vh;
-	background:  linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%);
-  margin-bottom: 12px;
+  height: 40vh;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  ),
+  url(../public/img/hero2.png) center center / cover no-repeat;
 }
 .hero3 {
-	height: 20vh;
-	background:  linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%);
-  margin-bottom: 12px;
+  height: 40vh;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  ),
+  url(../public/img/hero3.png) center center / cover no-repeat;
 }
 .hero4 {
-	height: 20vh;
-	background:  linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%);
-  margin-bottom: 12px;
+  height: 40vh;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  ),
+  url(../public/img/hero4.png) center center / cover no-repeat;
+}
+.hero5 {
+  height: 40vh;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  ),
+  url(../public/img/hero5.png) center center / cover no-repeat;
+}
+.hero6 {
+  height: 40vh;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  ),
+  url(../public/img/hero6.png) center center / cover no-repeat;
 }
 
-
-
-.as  {
-	.text{
-		display: none;
-	}
+.as {
+  .text {
+    display: none;
+  }
 }
 .as:hover {
-		.text{
-			display: flex;
-		}
-	
+  .text {
+    display: flex;
+  }
+}
+
+.subrayado {
+  border-bottom: 1px solid #fefefe;
+}
+
+.linked{
+	text-decoration: none;
+	color: #000
+}
+.linked2{
+	text-decoration: none;
+	color: violet
+}
+
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  border-radius: 10px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
