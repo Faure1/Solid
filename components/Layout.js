@@ -22,6 +22,7 @@ import {
   Link,
 } from "@nextui-org/react";
 import { FaShoppingCart, FaTrash, FaSun, FaMoon } from "react-icons/fa";
+import Head from "next/head";
 
 const Layout = ({ children }) => {
   const { type, isDark } = useTheme();
@@ -33,6 +34,9 @@ const Layout = ({ children }) => {
   };
   return (
     <>
+      <Head>
+        <meta charset="UTF-8" />
+      </Head>
       <Navbar isBordered variant='sticky'>
         <Navbar.Toggle showIn='xs' />
         <Navbar.Brand>
