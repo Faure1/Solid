@@ -87,7 +87,7 @@ const centro1 = () => {
             />
             <Card.Divider />
             <Card.Footer>
-              <Button  color='secondary' auto>
+              <Button color='secondary' auto>
                 <Link
                   target={"_blank"}
                   className='linked'
@@ -97,6 +97,26 @@ const centro1 = () => {
               </Button>
             </Card.Footer>
           </Card>
+        </Grid>
+      </Grid.Container>
+      <Grid.Container justify='center'>
+        <Grid xs={10} className='border'>
+          <Grid >
+            <Text h3>Actualmente</Text>
+            <Text css={{ p: "1%" }}>
+            En 2004 comenzó un período de recuperación para transformar al
+            predio de la ESMA en un Espacio para la Memoria y para la Promoción
+            y la Defensa de los Derechos Humanos. El 19 de mayo de 2015, se
+            inauguró el Museo Sitio de Memoria ESMA en el ex Casino de
+            Oficiales, donde no se alteró el edificio. El guión del Museo está
+            basado en los testimonios que las y los sobrevivientes brindaron.
+            Hoy el lugar es un espacio de denuncia del terrorismo de Estado y
+            transmisión de la memoria. Su misión es contribuir a conocer,
+            vivenciar y comprender las violaciones a los derechos humanos
+            cometidas por el Estado argentino, siendo parte de uno de los
+            Patrimonios de la Humanidad de la Unesco.
+            </Text>
+          </Grid>
         </Grid>
       </Grid.Container>
       <Grid.Container justify='center' css={{ mt: "50px" }}>

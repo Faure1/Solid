@@ -20,6 +20,7 @@ import {
   changeTheme,
   useTheme,
   Link,
+  Popover,
 } from "@nextui-org/react";
 import { FaShoppingCart, FaTrash, FaSun, FaMoon } from "react-icons/fa";
 import Head from "next/head";
@@ -35,7 +36,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <meta charset="UTF-8" />
+        <meta charset='UTF-8' />
       </Head>
       <Navbar isBordered variant='sticky'>
         <Navbar.Toggle showIn='xs' />
@@ -111,7 +112,9 @@ const Layout = ({ children }) => {
         </Navbar.Content>
         <Navbar.Collapse>
           <Navbar.CollapseItem>
-            <Link css={{color:"violet"}} href='../'>Inicio</Link>
+            <Link css={{ color: "violet" }} href='../'>
+              Inicio
+            </Link>
           </Navbar.CollapseItem>
           <Navbar.CollapseItem>
             <Dropdown>
@@ -160,22 +163,25 @@ const Layout = ({ children }) => {
       {children}
       <Grid css={{ mt: "20px" }} className='subrayado'></Grid>
       <Navbar css={{ mt: "20px" }}>
-        <Grid css={{ mb: "50px" }}>
-          <Dropdown>
-            <Dropdown.Button color='secondary' shadow>
-              Participantes
-            </Dropdown.Button>
-            <Dropdown.Menu
-              color='secondary'
-              variant='shadow'
-              aria-label='Actions'>
-              <Dropdown.Item key='nico'>Nicolas Pereyra</Dropdown.Item>
-              <Dropdown.Item key='faure'>Lautaro Faure</Dropdown.Item>
-              <Dropdown.Item key='luz'>Luz Strickler</Dropdown.Item>
-              <Dropdown.Item key='sele'>Selena Ramos</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
+        <Grid css={{ mb: "40px" }}>
+          <Popover>
+            <Popover.Trigger>
+              <Button auto flat>
+                Integrantes
+              </Button>
+            </Popover.Trigger>
+            <Popover.Content>
+              <Text css={{ p: "$4" }}>-Nicolas Pereyra</Text>
+              <Text css={{ p: "$4" }}>-Lautaro Faure</Text>
+              <Text css={{ p: "$4" }}>-Luz Strickler</Text>
+              <Text css={{ p: "$4" }}>-Selena Ramos</Text>
+            </Popover.Content>
+          </Popover>
         </Grid>
+        <Grid>
+          Historia
+        </Grid>
+ 
       </Navbar>
     </>
   );

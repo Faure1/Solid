@@ -103,37 +103,37 @@ export default function Home() {
           <Hero
             clase={"hero1"}
             titulo={"ESMA"}
-            desc={"Buenos Aires"}
+            desc={"Avenida del Libertador 8151, CABA."}
             href={"./centro1"}
           />
           <Hero
             clase={"hero2"}
             titulo={"CLUB ATLÉTICO"}
-            desc={"Buenos Aires"}
+            desc={"Avenida Paseo Colón 1266, CABA."}
             href={"./centro2"}
           />
           <Hero
             clase={"hero3"}
             titulo={"EL INFIERNO DE AVELLANEDA"}
-            desc={"Buenos Aires"}
+            desc={"12 de Octubre, Avellaneda, Provincia de Buenos Aires"}
             href={"./centro3"}
           />
           <Hero
             clase={"hero4"}
             titulo={"EL OLIMPO"}
-            desc={"Buenos Aires"}
+            desc={"Vélez Sarsfield entre las calles Olivera, Ramón Falcón, Lacarra, Fernández y Rafaela"}
             href={"./centro4"}
           />
           <Hero
             clase={"hero5"}
             titulo={"QUINTA DE FUNES"}
-            desc={"Santa Fe"}
+            desc={"Ruta 9 y, San José, Funes, Santa Fe"}
             href={"./centro5"}
           />
           <Hero
             clase={"hero6"}
             titulo={"BATALLÓN DE ARSENALES"}
-            desc={"Santa Fe"}
+            desc={"Monte Chingolo (Quilmes y Lanús), Santa Fe."}
             href={"./centro6"}
           />
         </Grid.Container>

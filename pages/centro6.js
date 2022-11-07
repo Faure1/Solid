@@ -87,6 +87,18 @@ const centro6 = () => {
           </Card>
         </Grid>
       </Grid.Container>
+      <Grid.Container justify='center'>
+        <Grid xs={10} className='border'>
+          <Grid >
+            <Text h3>Actualmente</Text>
+            <Text css={{ p: "1%" }}>
+            Se convirtió en un lugar de Memoria ante el Estado de represión de la Argentina de ese momento, fue uno de los pocos establecimientos que no abrió sus puertas para conocerlo, pero aún así sigue siendo de interés cultural e histórico, a pesar de conocer muy poco de este.
+
+
+            </Text>
+          </Grid>
+        </Grid>
+      </Grid.Container>
       <Grid.Container justify="center" css={{mt:"50px"}}>
         <Grid justify="center" md={5} xs={12}>
         <Swiper6/>

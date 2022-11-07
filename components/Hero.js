@@ -23,7 +23,7 @@ import {
 export const Hero = ({ titulo, clase, desc, href }) => {
   return (
     
-      <Grid.Container className={`as ${clase}`}>
+      <Grid.Container className={`as ${clase}`} >
         <Grid xs={1} md={1}></Grid>
         <Grid xs={7} md={7}  className='grid-hover'>
           <Grid css={{mt:"2rem"}}>

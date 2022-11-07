@@ -65,6 +65,15 @@ const Swiper2 = () => {
         </SwiperSlide>
         <SwiperSlide>
         <Card.Image
+              src='img/centro2/5.png'
+              objectFit='cover'
+              width='70%'
+              height='70%'
+              alt='centro1'
+            />
+        </SwiperSlide>
+        <SwiperSlide>
+        <Card.Image
               src='img/hero2.png'
               objectFit='cover'
               width='100%'

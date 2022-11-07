@@ -88,6 +88,18 @@ const centro3 = () => {
           </Card>
         </Grid>
       </Grid.Container>
+      <Grid.Container justify='center'>
+        <Grid xs={10} className='border'>
+          <Grid >
+            <Text h3>Actualmente</Text>
+            <Text css={{ p: "1%" }}>
+            La municipalidad de Avellaneda entre el 2012 y 2017, puso en marcha una unidad especializada de investigación, dando como resultado el primer Archivo Municipal de la Memoria Colectiva y Popular, pasando de tener un registro inicial de 79 víctimas a un registro que se complementa diariamente y que arroja la cifra de 604 a la actualidad.
+El Espacio además es utilizado como sitio para la memoria, la cultura y la educación en homenaje a las víctimas del terrorismo de Estado.
+
+            </Text>
+          </Grid>
+        </Grid>
+      </Grid.Container>
       <Grid.Container justify="center" css={{mt:"50px"}}>
         <Grid justify="center" md={5} xs={12}>
         <Swiper3/>

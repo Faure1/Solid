@@ -81,6 +81,18 @@ const centro5 = () => {
           </Card>
         </Grid>
       </Grid.Container>
+      <Grid.Container justify='center'>
+        <Grid xs={10} className='border'>
+          <Grid >
+            <Text h3>Actualmente</Text>
+            <Text css={{ p: "1%" }}>
+            En 2016 la señalizaron Sitio de Memoria del Terrorismo de Estado y se aprobó la expropiación del predio para conservar la edificación y resguardar los valores testimoniales históricos y culturales. Las instalaciones serán destinadas a la constitución de un espacio de memoria histórica de interés municipal y a un establecimiento educativo público 
+En 2017 el centro abrió sus puertas con fines educativos y culturales.
+En 2018 se lo rebautizó Universidad de los Valores y todavía no se hizo oficial la fecha de su inauguración.15​ Según el gobierno santafesino, la idea es darle un significado nuevo a este lugar, convirtiéndolo en un espacio educativo donde estudiantes primarios y secundarios puedan aprender sobre los crímenes de lesa humanidad ocurridos en Argentina.
+            </Text>
+          </Grid>
+        </Grid>
+      </Grid.Container>
       <Grid.Container justify="center" css={{mt:"50px"}}>
         <Grid justify="center" md={5} xs={12}>
         <Swiper5/>

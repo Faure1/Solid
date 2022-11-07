@@ -91,6 +91,19 @@ Entre 1976 y 1979 cumplieron funciones en el lugar unos 200 policías pero por t
           </Card>
         </Grid>
       </Grid.Container>
+      <Grid.Container justify='center'>
+        <Grid xs={10} className='border'>
+          <Grid >
+            <Text h3>Actualmente</Text>
+            <Text css={{ p: "1%" }}>
+            En abril de 2002, se iniciaron las obras arqueológicas que permitieron encontrar los restos del sótano y una gran cantidad de objetos, que fueron prueba material del testimonio de las víctimas.
+Al año siguiente, se creó el Programa de Recuperación de la Memoria y se conformó por sobrevivientes, familiares, organismos de derechos humanos,etc.
+La Legislatura de la Ciudad de Buenos Aires lo declaró Sitio Histórico, en 2005 y en 2014, cuando pasó a depender de la Secretaría de Derechos Humanos de la Nación, donde en octubre de ese mismo años se declaró lugar histórico nacional
+
+            </Text>
+          </Grid>
+        </Grid>
+      </Grid.Container>
       <Grid.Container justify="center" css={{mt:"50px"}}>
         <Grid justify="center" md={5} xs={12}>
         <Swiper2/>
