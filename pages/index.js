@@ -26,9 +26,16 @@ import {
 } from "@nextui-org/react";
 import { Hero } from "../components/Hero";
 import Bootstrap1 from "../components/Bootstrap1";
+import { useState } from "react";
 
 export default function Home() {
   const { setVisible, bindings } = useModal();
+  const [cual, setCual] = useState();
+  console.log(cual);
+  const Modals = (e) => {
+    setCual(e.target.value);
+    setVisible(true);
+  };
   return (
     <div>
       <Head>
@@ -126,15 +133,16 @@ export default function Home() {
             </Table>
           </Grid>
         </Grid.Container>
-        <Grid.Container css={{ mx: "10px", mt: "50px", mb: "50px" }} gap={10}>
-          <div>
+        <Grid.Container justify="center" css={{ mt: "50px", mb: "50px" }} gap={20}>
+          <Grid justify="center" xs={12} sm={1} md={1}>
             <Button
               auto
               shadow
               color="secondary"
-              onClick={() => setVisible(true)}
+              value={"comentarios"}
+              onPress={Modals}
             >
-              Solid
+              Comentarios
             </Button>
             <Modal
               scroll
@@ -144,20 +152,93 @@ export default function Home() {
               {...bindings}
             >
               <Modal.Header>
-                <Text id="modal-title" size={18}>
-                  ¿Que significa SOLID?
-                </Text>
+                {cual === "comentarios" ? (
+                  <Text> ¿Como utilizar los comentarios? </Text>
+                ) : cual === "Solid" ? (
+                  <Text> ¿Que significa solid? </Text>
+                ) : cual === "definiciones" ? (
+                  <Text>Definiciones importantes</Text>
+                ) : (
+                  <Text>Variables</Text>
+                )}
               </Modal.Header>
               <Modal.Body>
-                <ul>
-                  <li>
-                    - S = Single Responsibility Principle (SRP) (principio de responsabilidad)
-                  </li>
-                  <li>- O = Open/Closed Principle (OCP)(abierto/cerrado)</li>
-                  <li>- L = Liskov Substitution Principle (LSP) (principio de sustitución liskov)</li>
-                  <li>- I = Interface Segregation Principle (ISP)(principio de segregación de información)</li>
-                  <li>- D = Dependency Inversion Principle (DIP)(Principio de inversión de la dependencia)</li>
-                </ul>
+                <Text>
+                  {cual === "comentarios" ? (
+                    <Text>
+                      {" "}
+                      Los comentarios tienen que decir porque eligió por ese
+                      camino y no por otra cosas, de esta manera una persona que
+                      lee nuestro código sabe por qué utilizamos esa manera. Si
+                      haces un puente no tenes que comentar como lo hiciste o
+                      para qué sirve cada cosa sino tenes que decir porque
+                      elegiste hacerlo así y no de otra manera.{" "}
+                    </Text>
+                  ) : cual === "Solid" ? (
+                    <Text>
+                      {" "}
+                      <ol>
+                        <li>
+                           S = Single Responsibility Principle (SRP) (principio
+                          de responsabilidad)
+                        </li>
+                        <li>
+                           O = Open/Closed Principle (OCP)(abierto/cerrado)
+                        </li>
+                        <li>
+                           L = Liskov Substitution Principle (LSP) (principio
+                          de sustitución liskov)
+                        </li>
+                        <li>
+                           I = Interface Segregation Principle (ISP)(principio
+                          de segregación de información)
+                        </li>
+                        <li>
+                           D = Dependency Inversion Principle (DIP)(Principio
+                          de inversión de la dependencia)
+                        </li>
+                      </ol>{" "}
+                    </Text>
+                  ) : cual === "definiciones" ? (
+                      <ol>
+                        <li>
+                           Responsabilidad única = Cada clase tiene su función
+                          única e independiente de demás variables.
+                        </li>
+                        <li>
+                           Refactorizar, que aunque a veces no es más fácil
+                          pero lo que hace es que sea más fácil entenderlo o
+                          leerlo después.
+                        </li>
+                        <li> No usar abreviaturas.</li>
+                        <li>
+                           Primero crear una interface con los datos y los
+                          tipos que son por ej.
+                        </li>
+                        <li> name:string</li>
+                        <li>
+                           Después hay que desestructurar el estructurador y
+                          pasarle directamente los valores de la Interface
+                        </li>
+                        <li> Intentar evitar las extensiones</li>
+                        <li>
+                           dividir el código en diferentes partes así cada una
+                          cumple una función diferente y único
+                        </li>
+                        <li> código limpio</li>
+                      </ol>
+                  ) : (
+                    <div>
+                      <Text>Los nombres de las variables deben ser:</Text>
+                      <ol>
+                        <li>Pronunciables y expresivos</li>
+                        <li>Deben estar en inglés y ser pronunciables, sin ahorrarnos caracteres en nombres</li>
+                        <li>Que no contengan información técnica</li>
+                        <li>Expresivos en la función que se cumple, ya que si este nombre no hace referencia a la función el desarrollador ni quien lea el código va a entender</li>
+                      </ol>
+                    </div>
+                  )}
+                </Text>
               </Modal.Body>
               <Modal.Footer>
                 <Button
@@ -168,12 +249,42 @@ export default function Home() {
                 >
                   Close
                 </Button>
-                <Button auto onClick={() => setVisible(false)}>
-                  Agree
-                </Button>
               </Modal.Footer>
             </Modal>
-          </div>
+          </Grid>
+          <Grid justify="center" xs={12} sm={1} md={1}>
+            <Button
+              auto
+              shadow
+              color="secondary"
+              value={"Solid"}
+              onPress={Modals}
+            >
+              Solid
+            </Button>
+          </Grid>
+          <Grid justify="center" xs={12} sm={1} md={1}>
+            <Button
+              auto
+              shadow
+              color="secondary"
+              value={"definiciones"}
+              onPress={Modals}
+            >
+              Definiciones importantes
+            </Button>
+          </Grid>
+          <Grid justify="center" xs={12} sm={1} md={1}>
+            <Button
+              auto
+              shadow
+              color="secondary"
+              value={"Variables"}
+              onPress={Modals}
+            >
+              Variables
+            </Button>
+          </Grid>
         </Grid.Container>
       </Layout>
     </div>
