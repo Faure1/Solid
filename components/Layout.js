@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
         <Navbar.Toggle showIn='xs' />
         <Navbar.Brand>
           <Text b color='inherit' hideIn='xs'>
-            Historia
+            Solid
           </Text>
         </Navbar.Brand>
         <Navbar.Content
@@ -51,46 +51,6 @@ const Layout = ({ children }) => {
           hideIn='xs'
           variant='highlight'>
           <Navbar.Link href='../'>Inicio</Navbar.Link>
-          <Dropdown>
-            <Dropdown.Button color='secondary' size='md' flat>
-              centros
-            </Dropdown.Button>
-            <Dropdown.Menu
-              color='secondary'
-              variant='shadow'
-              aria-label='Actions'>
-              <Dropdown.Item key='nico'>
-                <Link id='boton' className='linked2' href='./centro1'>
-                  Esma
-                </Link>
-              </Dropdown.Item>
-              <Dropdown.Item key='faure'>
-                <Link id='boton' className='linked2' href='./centro2'>
-                  Club atlético
-                </Link>
-              </Dropdown.Item>
-              <Dropdown.Item key='luz'>
-                <Link id='boton' className='linked2' href='./centro3'>
-                  El infierno de avellaneda
-                </Link>
-              </Dropdown.Item>
-              <Dropdown.Item key='sele'>
-                <Link id='boton' className='linked2' href='./centro4'>
-                  El OLIMPO
-                </Link>
-              </Dropdown.Item>
-              <Dropdown.Item key='a'>
-                <Link id='boton' className='linked2' href='./centro5'>
-                  Santa fe quinta de funes
-                </Link>
-              </Dropdown.Item>
-              <Dropdown.Item key='d'>
-                <Link id='boton' className='linked2' href='./centro6'>
-                  Batallón de arsenales
-                </Link>
-              </Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
         </Navbar.Content>
         <Navbar.Content
           css={{
@@ -179,7 +139,7 @@ const Layout = ({ children }) => {
           </Popover>
         </Grid>
         <Grid>
-          Historia
+          Solid
         </Grid>
  
       </Navbar>
