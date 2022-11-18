@@ -53,7 +53,7 @@ export default function Home() {
           />
         </Grid.Container>
         <Grid.Container css={{ mt: "50px", mb: "50px" }}>
-          <Grid justify="center" xs={12} sm={6} md={6}>
+          <Grid css={{mb:"30px"}} justify="center" xs={12} sm={6} md={6}>
             <Card css={{ mw: "330px" }}>
               <Card.Header>
                 <Text b>¿Que son los principios SOLID?</Text>
@@ -87,7 +87,7 @@ export default function Home() {
             </Card>
           </Grid>
         </Grid.Container>
-        <Grid.Container>
+        <Grid.Container css={{mb:"50px"}}>
           <Grid justify="center" xs={12} sm={12} md={12}>
             <Table
               aria-label="Example table with static content"
@@ -133,8 +133,8 @@ export default function Home() {
             </Table>
           </Grid>
         </Grid.Container>
-        <Grid.Container justify="center" css={{ mt: "50px", mb: "50px" }} gap={20}>
-          <Grid justify="center" xs={12} sm={1} md={1}>
+        <Grid.Container justify="center" css={{ mt: "5px", mb: "50px",py:"0%",px:"0%" }} >
+          <Grid css={{py:"0%",mb:"30px",px:"0%" }} justify="center" xs={12} sm={2} md={2}>
             <Button
               auto
               shadow
@@ -252,7 +252,7 @@ export default function Home() {
               </Modal.Footer>
             </Modal>
           </Grid>
-          <Grid justify="center" xs={12} sm={1} md={1}>
+          <Grid justify="center" css={{py:"0%",mb:"30px",px:"0%" }} xs={12} sm={2} md={2}>
             <Button
               auto
               shadow
@@ -263,7 +263,7 @@ export default function Home() {
               Solid
             </Button>
           </Grid>
-          <Grid justify="center" xs={12} sm={1} md={1}>
+          <Grid css={{py:"0%",mb:"30px",px:"0%" }} justify="center" xs={12} sm={2} md={2}>
             <Button
               auto
               shadow
@@ -274,7 +274,7 @@ export default function Home() {
               Definiciones importantes
             </Button>
           </Grid>
-          <Grid justify="center" xs={12} sm={1} md={1}>
+          <Grid css={{py:"0%",mb:"30px",px:"0%" }} justify="center" xs={12} sm={2} md={2}>
             <Button
               auto
               shadow
